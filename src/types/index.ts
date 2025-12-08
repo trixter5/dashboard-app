@@ -31,6 +31,8 @@ export interface CategorySales {
 export interface DashboardFilters {
   search: string;
   status: Order['status'] | 'All';
+  category: Order['productCategory'] | 'All';
+  dateRange: [string, string];
 }
 
 export interface PaginationState {
